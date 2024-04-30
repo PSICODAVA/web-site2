@@ -1,0 +1,72 @@
+.approach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    background: var(--bg-gray);
+}
+.title-approach {
+    font: var(--headline5);
+    color: var(--fontColor);
+    display: block;
+    height: 100px;
+    background: var(--bg-nav);
+    text-align: center;
+    text-transform: uppercase;
+    align-content: center;
+    block-size: 60px;
+    width: 100%;
+}
+.subtitle-approach {
+    font: var(--fontBase);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+}
+.approach-content {
+    width: auto;
+    height: auto;
+}
+.p-approach {
+    width: auto;
+    margin: 15px;
+    text-align: justify;
+    font-size: 13px;
+}
+.approach-img {
+    display: block;
+    text-align: center;
+}
+.img-empathy {
+    height: 200px;
+}
+.experience-list {
+    width: auto;
+    margin: 15px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 1024px) {
+    .approach {
+        height: 900px;
+    }
+    .container-therapy {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        justify-content: center;
+    }
+    .title-approach {
+        font: var(--headline3);
+        color: var(--fontColor);
+        display: block;
+        height: 100px;
+        background: var(--bg-nav);
+        text-align: center;
+        text-transform: uppercase;
+        align-content: center;
+        block-size: 80px;
+    }
+}

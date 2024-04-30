@@ -1,0 +1,29 @@
+.button-contact {
+    background: var(--buttonColor);
+    color: var(--white);
+    font: var(--button);
+    padding-inline-start: 15px;
+    padding-inline-end: 20px;
+    padding-block-start: 11px;
+    padding-block-end: 13px;
+    border-radius: 6px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    width: 120px;
+    line-height: normal;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .button-contact {
+        height: 70px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 30px;
+        font-size: 22px;
+    }
+}

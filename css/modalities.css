@@ -1,0 +1,106 @@
+.modalities {
+    height: 950px;
+}
+.container-therapy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-therapy-virtal {
+    font: var(--headline6);
+    text-align: center;
+    padding-top: 10px;
+}
+.title-therapy-presencial {
+    font: var(--headline6);
+    text-align: center;
+    padding-top: 10px;
+}
+.virtual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.face-to-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-presencial {
+    padding-top: 30px;
+}
+.img-virtual {
+    padding-top: 30px;
+}
+.title-modalities {
+    font: var(--headline5);
+    color: var(--fontColor);
+    display: block;
+    height: 100px;
+    background: var(--bg-nav);
+    text-align: center;
+    text-transform: uppercase;
+    align-content: center;
+    block-size: 60px;
+}
+.paragraph-therapies {
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    .modalities {
+        height: 900px;
+    }
+    .container-therapy {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        justify-content: center;
+    }
+    .title-modalities {
+        font: var(--headline3);
+        color: var(--fontColor);
+        display: block;
+        height: 100px;
+        background: var(--bg-nav);
+        text-align: center;
+        text-transform: uppercase;
+        align-content: center;
+        block-size: 80px;
+    }
+    .title-therapy-virtual {
+        font: var(--headline4);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .title-therapy-presencial {
+        font: var(--headline4);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .paragraph-therapies {
+        text-align: center;
+        font-size: 24px;
+    }
+    .virtual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .face-to-face {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-presencial {
+        width: 500px;
+        padding-top: 80px;
+    }
+    .img-virtual {
+        width: 500px;
+        padding-top: 80px;
+    }
+}

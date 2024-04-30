@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: var(--bg-nav);
+    block-size: 60px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    margin: 0
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        background: var(--bg-nav);
+        block-size: 80px;
+        justify-content: space-around;
+    }
+    .img-icono {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 20px;
+        top: 5px;
+    }
+}

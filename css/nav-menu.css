@@ -1,0 +1,131 @@
+.nav-menu1 {
+    display: none;
+}
+.nav-menu2 {
+    display: none;
+}
+.psicodava {
+    text-decoration: none;
+    color: var(--fontColor);
+    font: var(--headline4);
+    text-transform: uppercase;
+}
+.nav-menu-mobile {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: end;
+    background: var(--primary);
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 0 0 0 50px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    
+}
+.nav-list-mobile {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: end;
+    margin-top: 10px;
+}
+.nav-list-mobile li a {
+    text-decoration: none;
+    color: var(--fontColor);
+    font: var(--navBarMobile);
+}
+.open-menu,
+.close-menu {
+    display: block;
+    color: #322203;
+    background: none;
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav-menu-mobile.visible {
+    opacity: 1;
+    visibility: visible;
+}
+@media screen and (min-width: 768px) {
+    .nav-menu-mobile {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .nav-menu-mobile {
+        display: none;
+    }
+    .nav-menu1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-menu2 {
+        display: flex;
+        gap: 300px;
+    }
+    .nav-menu1 ul a {
+        text-decoration: none;
+        color: var(--fontColor);
+        font: var(--navBar);
+        text-transform: uppercase;
+    }
+    .nav-menu2 ul a {
+        text-decoration: none;
+        color: var(--fontColor);
+        font: var(--navBar);
+        text-transform: uppercase;
+    }
+    .nav-list1 {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-top: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--fontColor);
+        font: var(--navBar);
+        gap: 120px;
+        
+    }
+    .nav-list2 {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-top: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--fontColor);
+        font: var(--navBar);
+        gap: 120px;
+    }
+    .psicodava {
+        text-decoration: none;
+        color: var(--fontColor);
+        font: var(--headline2);
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .psicodava-home {
+        position: absolute;
+        top: 0;
+        left: center;
+        right: center;
+        bottom: 10px;
+        margin: auto;
+    }
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+    .nav-desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 550px;
+        padding-top: 10px;
+    }
+}
