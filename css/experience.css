@@ -42,9 +42,12 @@
     font-size: 13px;
     margin: 15px;
 }
-.p-years {
+.p-years-1 {
     width: 80px;
     margin-top: 20px;
+}
+.p-years-2 { 
+    display: none;
 }
 .button-experience {
     margin-top: 40px;
@@ -78,5 +81,38 @@
         text-transform: uppercase;
         align-content: center;
         block-size: 80px;
+    }
+    .experience-content {
+        margin-top: 80px;
+    }
+    .years-higea {
+        font-size: 20px;
+        width: 300px;
+    }
+    .experience-higea {
+        font-size: 20px;
+        width: 600px;
+    }
+    .years-security {
+        font-size: 20px;
+        width: 300px;
+    }
+    .experience-security {
+        font-size: 20px;
+        width: 600px;
+    }
+    .years-internship {
+        font-size: 20px;
+        width: 300px;
+    }
+    .experience-internship {
+        font-size: 20px;
+        width: 600px;
+    }
+    .p-years-1 { 
+        display: none;
+    }
+    .p-years-2 { 
+        display: block;
     }
 }

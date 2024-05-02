@@ -69,4 +69,18 @@
         align-content: center;
         block-size: 80px;
     }
+    .subtitle-approach {
+        font: var(--fontBase);
+        font-size: 40px;
+        font-weight: 700;
+        margin: 20px;
+        margin-top: 50px;
+    }
+    .p-approach {
+        width: 1000px;
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 80px;
+        line-height: 40px;
+    }
 }
