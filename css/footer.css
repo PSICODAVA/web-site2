@@ -1,0 +1,154 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 395px;
+}
+.title-footer {
+    font: var(--headline5);
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+    left: 10px;
+    margin-top: 10px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    padding-left: 70px;
+}
+.container-icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.container-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+.links-footer {
+    color: var(--fontColor);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+    align-content: center;
+}
+.links-footer1 {
+    color: var(--fontColor);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+    align-content: center;
+}
+.icons-footer {
+    color: var(--fontColor);
+    width: 25px;
+    padding-right: 10px;
+}
+.container-footer {
+    width: 100%;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    background: url('../images/contacto-fondo-celular.png') no-repeat;
+    background-size: 380px;
+    background-position: unset;
+}
+.text-wrap-footer {
+    font-size: 18px;
+    text-align: left;
+    width: 360px;
+    height: 150px;
+    font-weight: 500;
+    margin-top: -45px;
+}
+.background-footer {
+    display: block;
+    width: 100%;
+    background-color: var(--fontColor);    
+    text-align: center;
+    height: 80px;
+    align-content: center;
+    color: var(--white);
+}
+.footer-copyright{
+    border-top: 4px solid var(--fontColor);
+    margin: 50px 0 30px 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 530px;
+    }
+    .container-footer {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        background: url('../images/contacto-fondo-grande.png') no-repeat;
+        background-size: 1920px;
+        background-position: center;
+    }
+    .title-footer {
+        font: var(--headline4);
+        color: var(--fontColor);
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        align-content: center;
+        width: 100%;
+        font-size: 40px;
+        margin-left: -20px;
+    }
+    .text-wrap-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        height: 300px;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .container-links {
+        gap: 13px;
+        margin-top: 10px
+    }
+    .links-footer {
+        font-size: 16px;
+        align-items: center;
+    }
+    .icons-footer {
+        width: 30px;
+    }
+    .background-footer {
+        display: block;
+        width: 100%;
+        background-color: var(--fontColor);    
+        text-align: center;
+        height: 80px;
+        align-content: center;
+    }
+    .footer-copyright{
+        border-top: 4px solid var(--fontColor);
+        margin: 50px 0 30px 0;
+        color: var(--white);
+    }
+}

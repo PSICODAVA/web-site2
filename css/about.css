@@ -1,6 +1,6 @@
 .about-background {
     background: var(--bg-gray);
-    height: 700px;
+    height: 664px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 694px;
 }
 .dahiana {
     display: flex;
@@ -39,9 +39,10 @@
 }
 .p-about {
     width: auto;
-    margin: 15px;
+    margin: 20px;
     text-align: justify;
     font-size: 13px;
+    font-weight: 500;
 }
 .about-img {
     display: block;
@@ -53,12 +54,12 @@
 
 @media screen and (min-width: 1024px) {
     .about-background {
-        padding-top: 50px;
+        padding-top: 20px;
         width: 100%;
-        height: 870px;
+        height: 815px;
     }
     .about {
-        height: 920px;
+        height: 835px;
     }
     .title-about {
         font: var(--fontBase);
@@ -70,23 +71,23 @@
         font: var(--fontBase);
         font-size: 40px;
         font-weight: 700;
-        margin: 20px;
+        margin: 10px;
     }
     .title-professional {
         font: var(--fontBase);
         font-weight: 700;
         font-size: 26px;
-        margin: 20px;
+        margin: 10px;
     }
     .p-about {
         width: 1000px;
         text-align: justify;
-        font-size: 20px;
+        font-size: 21px;
         margin-top: 30px;
         line-height: 40px;
+        font-weight: 500;
     }
     .img-dahiana {
-        top: 300px;
-        height: 350px;
+        height: 330px;
     }
 }

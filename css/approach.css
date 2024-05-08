@@ -30,16 +30,17 @@
 }
 .p-approach {
     width: auto;
-    margin: 15px;
+    margin: 20px;
     text-align: justify;
     font-size: 13px;
+    font-weight: 500;
 }
 .approach-img {
     display: block;
     text-align: center;
 }
 .img-empathy {
-    height: 200px;
+    height: 160px;
 }
 .experience-list {
     width: auto;
@@ -50,7 +51,7 @@
 
 @media screen and (min-width: 1024px) {
     .approach {
-        height: 900px;
+        height: 834px;
     }
     .container-therapy {
         display: flex;
@@ -74,13 +75,17 @@
         font-size: 40px;
         font-weight: 700;
         margin: 20px;
-        margin-top: 50px;
+        margin-top: 60px;
     }
     .p-approach {
-        width: 1000px;
+        width: 1010px;
         text-align: justify;
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 80px;
         line-height: 40px;
+        font-weight: 500;
+    }
+    .img-empathy {
+        height: 300px;
     }
 }

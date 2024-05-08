@@ -6,7 +6,9 @@
 @import "./modalities.css";
 @import "./experience.css";
 @import "./approach.css";
-
+@import "./footer.css";
+@import "./contact-form.css";
+@import "./blog.css";
 
 :root {
     --fontBase: "Montserrat", sans-serif;
@@ -15,7 +17,7 @@
     --headline2: bold 57px/90px var(--fontTitle);
     --headline3: bold 48px/77px var(--fontTitle);
     --headline4: bold 34px/55px var(--fontTitle);
-    --headline5: bold 28px/44px var(--fontTitle);
+    --headline5: bold 27px/44px var(--fontTitle);
     --headline6: bold 24px/38px var(--fontBase);
     --body1: 16px/25px var(--fontBase);
     --body2: 14px/22px var(--fontBase);
@@ -26,6 +28,7 @@
     --bg2: #EDE9DF;
     --bg-gray: #DDDEE3;
     --bg-nav: #EBEBEB;
+    --bg-post: #D7A790;
     --fontColor: #322203;
     --white: white;
     --black: #0F0A0A;
@@ -40,8 +43,4 @@ body {
     font: var(--body1);
     color: var(--black);
     margin: 0;
-}
-
-#icono {
-    padding-left: 20px;
 }

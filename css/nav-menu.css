@@ -109,13 +109,10 @@
         font: var(--headline2);
         text-transform: uppercase;
         margin: 0;
+        padding-left: 1700px;
     }
     .psicodava-home {
         position: absolute;
-        top: 0;
-        left: center;
-        right: center;
-        bottom: 10px;
         margin: auto;
     }
     .open-menu,

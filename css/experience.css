@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1000px;
+    height: 630px;
 }
 .title-experience {
     font: var(--headline5);
@@ -18,39 +18,27 @@
 }
 .experience-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
     height: 120px;
     margin-top: 20px;
 }
-.experience-img {
-    display: block;
-    text-align: center;
-}
-.years-list {
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-    font-size: 13px;
-    margin: 15px;
-}
 .experience-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
     text-align: justify;
-    font-size: 13px;
     margin: 15px;
+    gap: 10px;
+    padding-left: 25px;
+    padding-right: 10px;
 }
-.p-years-1 {
-    width: 80px;
-    margin-top: 20px;
-}
-.p-years-2 { 
-    display: none;
+.li-exp {
+    font-size: 13px;
+    font-weight: 500;
 }
 .button-experience {
-    margin-top: 40px;
+    margin-top: 370px;
 }
 .button-cv {
     background: var(--buttonColor);
@@ -61,15 +49,23 @@
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    height: 40px;
-    width: 160px;
-    line-height: normal;
-    margin-left: 10px;
+    line-height: normal;    
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.img-experience-content {
+    display: block;
+    text-align: center;
+}
+.img-experience {
+    width: 300px;
 }
 
 @media screen and (min-width: 1024px) {
     .experience {
-        height: 900px;
+        height: 820px;
     }
     .title-experience {
         font: var(--headline3);
@@ -83,36 +79,38 @@
         block-size: 80px;
     }
     .experience-content {
-        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 500px;
+        margin-top: 90px;
+        gap: 50px;
     }
-    .years-higea {
-        font-size: 20px;
-        width: 300px;
+    .experience-list {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        text-align: justify;
+        margin: 15px;
+        gap: 60px
     }
-    .experience-higea {
-        font-size: 20px;
-        width: 600px;
+    .li-exp {
+        font-size: 22px;
+        font-weight: 500;
     }
-    .years-security {
-        font-size: 20px;
-        width: 300px;
+    .img-experience {
+        width: 540px;
+        padding-top: 20px;
     }
-    .experience-security {
-        font-size: 20px;
-        width: 600px;
+    .button-experience {
+        margin-top: 20px;
     }
-    .years-internship {
-        font-size: 20px;
-        width: 300px;
+    .button-cv {
+        height: 70px;
+        width: 230px;
+        line-height: normal;
+        margin-top: 50px;
+        font-size: 22px;
     }
-    .experience-internship {
-        font-size: 20px;
-        width: 600px;
-    }
-    .p-years-1 { 
-        display: none;
-    }
-    .p-years-2 { 
-        display: block;
-    }
+    
 }

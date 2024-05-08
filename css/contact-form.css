@@ -1,0 +1,225 @@
+.container-fluid-contact-form{
+    width: 100%;
+    height: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.container-content-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+}
+.title-form2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font: var(--fontBase);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    background-color: var(--fontColor);
+    margin: 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px 20px 50px;
+}
+.contact-titles {
+    font: var(--fontBase);
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px auto 10px;
+}
+.input1 {
+    display: none
+}
+.input2 {
+    display: block;
+    font-size: 15px;
+}
+.half {
+    margin-top: 20px;
+}
+.button-contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    max-width: 300px;
+    margin: auto;
+}
+.button-cf {
+    background: var(--buttonColor);
+    color: var(--white);
+    font: var(--button);
+    border-radius: 6px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;    
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 19px;
+}
+input,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 0; 
+    outline: 0; 
+    padding: 1em; 
+    border-radius: 8px; 
+    display: block; 
+    width: 93%; 
+    resize: none; 
+    font-size: 16px;
+}
+#input-submit {  
+    cursor: pointer; 
+    
+} 
+#input-submit:hover { 
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2); 
+} 
+textarea { 
+    height: 172px; 
+    resize: vertical;
+}
+.half { 
+    float: left; 
+    width: 48%; 
+    margin-bottom: 1em; 
+} 
+.right { 
+    width: 50%; 
+} 
+.left { 
+    margin-right: 2%; 
+} 
+[type="submit"] {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .half { 
+        width: 100%; 
+        float: none; 
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    #input-submit {
+        font-size: 16px;
+        width: 366px;
+        margin-top: 30px;
+    }
+};
+
+@media screen and (min-width: 531px) {
+    #contact-titles{
+        font-size: 18px;
+    }
+    input, textarea {
+        font-size: 14px;
+        width: 90%;
+    } 
+    #input-submit {
+        font-size: 16px;
+        width: 413px;
+    } 
+    .input1 {
+        display: none;
+    }
+    .input2 {
+        display: block;
+    }
+    textarea { 
+        height: 153px; 
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container-fluid-contact-form{
+        width: 100%;
+        height: 550px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    .container-content-contact {
+        align-items: center;
+        height: 550px;
+        margin-top: 30px;
+    }
+    .contact-titles {
+        font-size: 23px;
+        margin: 20px auto 20px;
+    }
+    .title-form2{
+        font-size: 40px;
+        align-items: center;
+        height: 70px;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 50px 60px 50px;
+        gap: 50px;
+    }
+    .button-contact-form {
+        margin: 0;
+        max-width: 1000px;
+    }
+    
+    #input-submit {
+        font-size: 20px;
+        width: 1000px;
+        margin-right: 20px;
+    } 
+    .half { 
+        float: left; 
+        width: 48%; 
+        margin-bottom: 1em; 
+    } 
+    .right { 
+        width: 50%; 
+    } 
+    .left { 
+        margin-right: 2%; 
+    }
+    .cf:before, .cf:after {
+        content: ' '; 
+        display: table;
+    }
+    .cf:after {
+        clear: both;
+    }
+    .input1 { 
+        display: flex;
+    }
+    .input2 {
+        display: none
+    }
+    
+}
+

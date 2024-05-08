@@ -1,5 +1,5 @@
 .modalities {
-    height: 950px;
+    height: 910px;
 }
 .container-therapy {
     display: flex;
@@ -30,7 +30,7 @@
     padding-top: 30px;
 }
 .img-virtual {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 .title-modalities {
     font: var(--headline5);
@@ -45,12 +45,15 @@
 }
 .paragraph-therapies {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
 }
 
 @media screen and (min-width: 1024px) {
     .modalities {
-        height: 900px;
+        height: 834px;
     }
     .container-therapy {
         display: flex;
@@ -83,7 +86,9 @@
     }
     .paragraph-therapies {
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 30px;
     }
     .virtual {
         display: flex;
@@ -96,11 +101,11 @@
         align-items: center;
     }
     .img-presencial {
-        width: 500px;
-        padding-top: 80px;
+        width: 450px;
+        padding-top: 100px;
     }
     .img-virtual {
-        width: 500px;
-        padding-top: 80px;
+        width: 450px;
+        padding-top: 100px;
     }
 }
