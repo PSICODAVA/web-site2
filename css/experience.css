@@ -4,6 +4,12 @@
     align-items: center;
     height: 630px;
 }
+.container-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 .title-experience {
     font: var(--headline5);
     color: var(--fontColor);
@@ -20,7 +26,7 @@
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 120px;
+    height: auto;
     margin-top: 20px;
 }
 .experience-list {
@@ -38,9 +44,9 @@
     font-weight: 500;
 }
 .button-experience {
-    margin-top: 370px;
+    margin-top: 30px;
 }
-.button-cv {
+.button-contact-experience {
     background: var(--buttonColor);
     color: var(--white);
     font: var(--button);
@@ -105,12 +111,14 @@
     .button-experience {
         margin-top: 20px;
     }
-    .button-cv {
-        height: 70px;
-        width: 230px;
-        line-height: normal;
+    .button-contact-experience {
         margin-top: 50px;
-        font-size: 22px;
+        margin-left: 10px;
+        font-size: 24px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     
 }

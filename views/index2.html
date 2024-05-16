@@ -4,55 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSICODAVA</title>
-    <link rel="icon" type="image/png" href="./images/icons/icono.png" />
+    <link rel="icon" type="image/png" href="../images/icons/icono.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bdd7f0eef4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
     <header class="header" role="banner">
-        <div class="container-header">
-            <div class="psicodava-icon">
-                <a href="#home"><img class="img-icon" src="./images/icons/icono.png" alt="icono"></a>
-            </div> 
-            <h1 class="psicodava-home"><a href="#home" class="psicodava">PSICODAVA</a></h1>
+        <nav class="navbar" id="nav">
+            <div class="container-navbar">
+                <div class="psicodava-icon">
+                    <a onclick="irAElementoPorIdConOffset('home')"><img class="img-icon" src="../images/icons/icono.png" alt="icono"></a>
+                </div>
+                <div class="navbar-lists">
+                    <ul class="nav-menu-desktop">
+                        <li class="nav-item"><a class="nav-link" onclick="irAElementoPorIdConOffset('about')">SOBRE MI</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="irAElementoPorIdConOffset('approach')">ENFOQUE</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="irAElementoPorIdConOffset('experience')">EXPERIENCIA</a></li>
+                        <li class="nav-item"><a class="psicodava" onclick="irAElementoPorIdConOffset('home')">PSICODAVA</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="irAElementoPorIdConOffset('modality')">MODALIDADES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/views/blog.html">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="irAElementoPorIdConOffset('footer')">CONTACTO</a></li>
+                    </ul>
+                    <ul class="nav-menu-mobile">
+                        <li class="nav-item"><a href="#about">SOBRE MI</a></li>
+                        <li class="nav-item"><a href="#approach">ENFOQUE</a></li>
+                        <li class="nav-item"><a href="#experience">EXPERIENCIA</a></li>
+                        <li class="nav-item"><a href="#modality">MODALIDADES</a></li>
+                        <li class="nav-item"><a href="/views/blog.html">BLOG</a></li>
+                        <li class="nav-item"><a href="#footer">CONTACTO</a></li>
+                    </ul>
+                </div>
+                <button class="close-menu" id="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <button class="open-menu" id="open"><i class="fa-solid fa-bars"></i></button>
-            <nav class="nav-menu-mobile" id="nav" role="navigation">
+        </nav>
+        
+        <!-- <div class="container-header">
+            <div class="psicodava-icon">
+                <a href="#home"><img class="img-icon" src="../images/icons/icono.png" alt="icono"></a>
+            </div>
+            <button class="open-menu" id="open"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav-menu" id="nav" role="navigation">
                 <button class="close-menu" id="close"><i class="fa-solid fa-xmark"></i></button>
                 <ul class="nav-list-mobile">
                     <li><a href="#about">SOBRE MI</a></li>
                     <li><a href="#approach">ENFOQUE</a></li>
                     <li><a href="#experience">EXPERIENCIA</a></li>
                     <li><a href="#modality">MODALIDADES</a></li>
-                    <li><a href="./blog.html/#blog">BLOG</a></li>
+                    <li><a href="/views/blog.html">BLOG</a></li>
                     <li><a href="#footer">CONTACTO</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div class="nav-desktop">
-            <nav class="nav-menu1" role="navigation">
-                <ul class="nav-list1">
+                <ul class="nav-list-desktop">
                     <li><a href="#about">SOBRE MI</a></li>
                     <li><a href="#approach">ENFOQUE</a></li>
                     <li><a href="#experience">EXPERIENCIA</a></li>
-                </ul>
-            </nav>
-            <nav class="nav-menu2" role="navigation">
-                <ul class="nav-list2">
+                    <li><a href="#psicodava">PSICODAVA</a></li>
                     <li><a href="#modality">MODALIDADES</a></li>
-                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="/views/blog.html">BLOG</a></li>
                     <li><a href="#footer">CONTACTO</a></li>
                 </ul>
             </nav>
-        </div>
+            
+        </div> -->
     </header>
     <main>
         <section class="home-page" id="home">
             <h1 class="title-home">Encuentra claridad en cada paso: Tu bienestar, nuestra misión.</h1>
-            <img class="img-logo" src="./images/icons/logo.png" width=375 alt="Logo de la Psicologa Dahiana Valencia">
-            <button class="button-contact">Contactar</button>
+            <img class="img-logo" src="../images/icons/logo.png" width=375 alt="Logo de la Psicologa Dahiana Valencia">
+            <a onclick="irAElementoPorIdConOffset('footer')" class="button-contact" role="button">Contactar</a>
         </section>
         <section class="about" id="about">
             <div class="about-background">
@@ -68,21 +90,21 @@
                         Ya sea que estés lidiando con desafíos personales, familiares o de relación, te ofrezco un espacio seguro y de apoyo donde puedes explorar tus preocupaciones, desarrollar nuevas habilidades y encontrar el camino hacia una vida más satisfactoria y significativa.
                     </p>
                     <div class="about-img">
-                        <img src="./images/dahiana1.png" alt="Fotografía de Dahiana Valencia" class="img-dahiana">
+                        <img src="../images/dahiana1.png" alt="Fotografía de Dahiana Valencia" class="img-dahiana">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="modalities" id="modality">
-            <div class="title-modalities" >Modalidades</div>
+        <section class="modalities"  id="modality">
+            <div class="title-modalities"> Modalidades</div>
             <div class="container-therapy">
                 <div class="virtual">
-                    <img class="img-virtual" src="./images/terapia-virtual.png" width="280" alt="Ilustración de una psicoterapia virtual">
+                    <img class="img-virtual" src="../images/terapia-virtual.png" width="280" alt="Ilustración de una psicoterapia virtual">
                     <h2 class="title-therapy-virtual">Terapia virtual</h2>
                     <p class="paragraph-therapies">Conectate desde donde quieras<br>con tu psicóloga de confianza</p>
                 </div>
                 <div class="face-to-face">
-                    <img class="img-presencial" src="./images/terapia-presencial.png" width="280" alt="Ilustración de una psicoterapia presencial">
+                    <img class="img-presencial" src="../images/terapia-presencial.png" width="280" alt="Ilustración de una psicoterapia presencial">
                     <h2 class="title-therapy-presencial">Terapia presencial</h2>
                     <p class="paragraph-therapies">Hablemos de frente en un<br>espacio seguro</p>
                 </div>
@@ -97,7 +119,7 @@
                     Mi enfoque terapéutico se basa en la empatía, la compasión y la confianza mutua, creando un ambiente seguro y de apoyo para el crecimiento personal llevando a cambios positivos.
                 </p>
                 <div class="approach-img">
-                    <img src="./images/approach.png" alt="Imagen Empatía, compasión y confianza mutua" class="img-empathy">
+                    <img src="../images/approach.png" alt="Imagen Empatía, compasión y confianza mutua" class="img-empathy">
                 </div>
             </div>
         </section>
@@ -105,7 +127,7 @@
             <div class="title-experience">Experiencia</div>
             <div class="experience-content">
                 <div class="img-experience-content">
-                    <img class="img-experience" src="./images/experiencia.png" alt="Imagen sobre Experiencia Laboral">
+                    <img class="img-experience" src="../images/experiencia.png" alt="Imagen sobre Experiencia Laboral">
                 </div>
                 <div class="p-experience">
                     <ul class="experience-list">
@@ -117,9 +139,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="button-experience">
-                <a href="documents/Curriculum Dahiana Valencia Hernández.pdf" download class="button-cv">Descargar CV</a>
-            </div>
         </section>
         
     </main>
@@ -129,9 +148,9 @@
                 <h3 class="title-footer">Contacto</h3>
                 <div class="footer-content">
                     <div class="container-icons">  
-                        <a class="links-footer1" target="_blank" href="https://api.whatsapp.com/send?phone=3117443258"><img class="icons-footer" src="./images/icons/whatsapp.png" alt="Icono WhatsApp"></a>
-                        <a class="links-footer1" target="_blank" href="#contact-form"><img class="icons-footer" src="./images/icons/correo.png" alt="Icono Correo Electrónico"></a>
-                        <a class="links-footer1" target="_blank" href="https://www.instagram.com/psico_dava/?hl=es-la"><img class="icons-footer" src="./images/icons/instagram.png" alt="Icono Instagram"></a>
+                        <a class="links-footer1" target="_blank" href="https://api.whatsapp.com/send?phone=3117443258"><img class="icons-footer" src="../images/icons/whatsapp.png" alt="Icono WhatsApp"></a>
+                        <a class="links-footer1" target="_blank" href="#contact-form"><img class="icons-footer" src="../images/icons/correo.png" alt="Icono Correo Electrónico"></a>
+                        <a class="links-footer1" target="_blank" href="https://www.instagram.com/psico_dava/?hl=es-la"><img class="icons-footer" src="../images/icons/instagram.png" alt="Icono Instagram"></a>
                     </div>
                     <div class="container-links">
                         <a class="links-footer" target="_blank" href="https://api.whatsapp.com/send?phone=3117443258">3117443258</a>
@@ -145,6 +164,8 @@
             <h3 className="footer-copyright">&copy; Portafolio Profesional PSICODAVA | Psicóloga Dahiana Valencia</h3>
         </div>
     </footer>
-    <script src="./javascript/nav.js"></script>
+    <script src="../javascript/nav.js"></script>
+    <script src="../javascript/index.js"></script>
+
 </body>
 </html>

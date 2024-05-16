@@ -1,16 +1,18 @@
-.nav-menu1 {
-    display: none;
-}
-.nav-menu2 {
-    display: none;
-}
 .psicodava {
     text-decoration: none;
     color: var(--fontColor);
     font: var(--headline4);
     text-transform: uppercase;
 }
-.nav-menu-mobile {
+.container-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding-top: 5px;
+}
+.navbar {
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -24,16 +26,18 @@
     padding-top: 15px;
     border-radius: 0 0 0 50px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    
 }
-.nav-list-mobile {
+.nav-menu-mobile {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     align-items: end;
     margin-top: 10px;
 }
-.nav-list-mobile li a {
+.nav-menu-desktop {
+    display: none
+}
+.nav-menu-mobile li a {
     text-decoration: none;
     color: var(--fontColor);
     font: var(--navBarMobile);
@@ -47,82 +51,182 @@
     font-size: 30px;
     cursor: pointer;
 }
-.nav-menu-mobile.visible {
+.navbar.visible {
     opacity: 1;
     visibility: visible;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        align-items: center;
+        background: var(--bg-nav);
+        border-radius: 0 0 0 0;
+        box-shadow: none;
+    }
+    .container-navbar {
+        justify-content: start;
+        gap: 0px;
+    }
     .nav-menu-mobile {
         display: none;
     }
-}
-@media screen and (min-width: 1024px) {
-    .nav-menu-mobile {
-        display: none;
-    }
-    .nav-menu1 {
+    .navbar-lists {
         display: flex;
         flex-direction: row;
     }
-    .nav-menu2 {
+    .nav-menu-desktop {
         display: flex;
-        gap: 300px;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        padding-right: 35px;
+        padding-left: 0;
     }
-    .nav-menu1 ul a {
-        text-decoration: none;
+    .nav-item {
+        cursor: pointer;
+    }
+    .nav-link {
+        display: block;
+        padding-top: 7px;
+        padding-left: 15px;
         color: var(--fontColor);
         font: var(--navBar);
         text-transform: uppercase;
-    }
-    .nav-menu2 ul a {
         text-decoration: none;
-        color: var(--fontColor);
-        font: var(--navBar);
-        text-transform: uppercase;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out;
     }
-    .nav-list1 {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin-top: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: var(--fontColor);
-        font: var(--navBar);
-        gap: 120px;
-        
-    }
-    .nav-list2 {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin-top: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: var(--fontColor);
-        font: var(--navBar);
-        gap: 120px;
+    .nav-link:hover {
+        color: var(--primary);
     }
     .psicodava {
-        text-decoration: none;
+        display: block;
+        padding-top: 7px;
+        padding-left: 15px;
         color: var(--fontColor);
-        font: var(--headline2);
+        font: var(--headline3);
         text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out;
         margin: 0;
-        padding-left: 1700px;
+        padding: 0;
     }
-    .psicodava-home {
-        position: absolute;
-        margin: auto;
+    .psicodava:hover {
+        color: var(--primary);
     }
     .open-menu,
     .close-menu {
         display: none;
     }
-    .nav-desktop {
-        display: flex;
-        flex-direction: row;
-        gap: 550px;
-        padding-top: 10px;
+}
+@media screen and (min-width: 1300px) {
+    .nav-menu-desktop {
+        gap: 25px;
     }
 }
+@media screen and (min-width: 1400px) {
+    .nav-menu-desktop {
+        gap: 35px;
+        padding-right: 50px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .nav-menu-desktop {
+        gap: 45px;
+    }
+    .psicodava {
+        font: var(--headline2);
+    }
+}
+@media screen and (min-width: 1600px) {
+    .nav-menu-desktop {
+        gap: 55px;
+        padding-right: 70px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .nav-menu-desktop {
+        gap: 75px;
+        padding-right: 90px;
+    }
+}
+/* @media screen and (min-width: 1200px) {
+    .navbar {
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        align-items: center;
+        background: var(--bg-nav);
+        border-radius: 0 0 0 0;
+        box-shadow: none;
+    }
+    .container-navbar {
+        justify-content: start;
+        gap: 0px;
+    }
+    .nav-menu-mobile {
+        display: none;
+    }
+    .navbar-lists {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-menu-desktop {
+        display: flex;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        padding-right: 130px;
+    }
+    .nav-item {
+        cursor: pointer;
+    }
+    .nav-link {
+        display: block;
+        padding-top: 7px;
+        padding-left: 15px;
+        color: var(--fontColor);
+        font: var(--navBar);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out;
+    }
+    .nav-link:hover {
+        color: var(--primary);
+    }
+    .psicodava {
+        display: block;
+        padding-top: 7px;
+        padding-left: 15px;
+        color: var(--fontColor);
+        font: var(--headline2);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out;
+        margin: 0;
+        padding: 0;
+    }
+    .psicodava:hover {
+        color: var(--primary);
+    }
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+} */

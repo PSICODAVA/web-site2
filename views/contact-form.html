@@ -4,49 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSICODAVA</title>
-    <link rel="icon" type="image/png" href="./images/icons/icono.png" />
+    <link rel="icon" type="image/png" href="../images/icons/icono.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bdd7f0eef4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
     <header class="header" role="banner">
-        <div class="container-header">
+        <div class="container-navbar">
             <div class="psicodava-icon">
-                <a href="./index.html/#home"><img class="img-icon" src="./images/icons/icono.png" alt="icono"></a>
-            </div> 
-            <h1 class="psicodava-home"><a href="./index.html/#home" class="psicodava">PSICODAVA</a></h1>
+                <a href="/views/index.html"><img class="img-icon" src="../images/icons/icono.png" alt="icono"></a>
+            </div>
+            <a class="psicodava" onclick="irAElementoPorIdConOffset('home')">PSICODAVA</a>
             <button class="open-menu" id="open"><i class="fa-solid fa-bars"></i></button>
-            <nav class="nav-menu-mobile" id="nav" role="navigation">
-                <button class="close-menu" id="close"><i class="fa-solid fa-xmark"></i></button>
-                <ul class="nav-list-mobile">
-                    <li><a href="./index.html/#about">SOBRE MI</a></li>
-                    <li><a href="./index.html/#approach">ENFOQUE</a></li>
-                    <li><a href="./index.html/#experience">EXPERIENCIA</a></li>
-                    <li><a href="./index.html/#modality">MODALIDADES</a></li>
-                    <li><a href="./index.html/#blog">BLOG</a></li>
-                    <li><a href="./index.html/#contact">CONTACTO</a></li>
-                </ul>
-            </nav>
         </div>
-        <div class="nav-desktop">
-            <nav class="nav-menu1" role="navigation">
-                <ul class="nav-list1">
-                    <li><a href="#about">SOBRE MI</a></li>
-                    <li><a href="#approach">ENFOQUE</a></li>
-                    <li><a href="#experience">EXPERIENCIA</a></li>
+        <nav class="navbar" id="nav" role="navigation">
+            <button class="close-menu" id="close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="navbar-lists">
+                <ul class="nav-menu-desktop">
+                    <div class="psicodava-icon">
+                        <a onclick="irAElementoPorIdConOffset('home')"><img class="img-icon" src="../images/icons/icono.png" alt="icono"></a>
+                    </div>
+                    <li class="nav-item"><a class="nav-link" href="/views/index.html">SOBRE MI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views/index.html">ENFOQUE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views/index.html">EXPERIENCIA</a></li>
+                    <li class="nav-item"><a class="psicodava" href="/views/index.html">PSICODAVA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views/index.html">MODALIDADES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views/blog.html">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/views/index.html">CONTACTO</a></li>
                 </ul>
-            </nav>
-            <nav class="nav-menu2" role="navigation">
-                <ul class="nav-list2">
-                    <li><a href="#modality">MODALIDADES</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#footer">CONTACTO</a></li>
+                <ul class="nav-menu-mobile">
+                    <li class="nav-item"><a href="#about">SOBRE MI</a></li>
+                    <li class="nav-item"><a href="#approach">ENFOQUE</a></li>
+                    <li class="nav-item"><a href="#experience">EXPERIENCIA</a></li>
+                    <li class="nav-item"><a href="#modality">MODALIDADES</a></li>
+                    <li class="nav-item"><a href="/views/blog.html">BLOG</a></li>
+                    <li class="nav-item"><a href="#footer">CONTACTO</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main id="main">
         <div class="container-fluid-contact-form">
@@ -64,7 +62,7 @@
                         <input class="input1" id="correo" type='email' placeholder='Digite Correo Electrónico' name='user_email' />
                         <input class="input2" id="correo" type='email' placeholder='Correo Electrónico' name='user_email' />
                     </div>
-                    <div class='half left cf'>
+                    <div class='half right cf'>
                         <h5 id="contact-titles" class="contact-titles">Mensaje</h5>
                         <textarea id="mensaje" name='message' type='text' placeholder='Escriba aquí su mensaje'></textarea>
                     </div>                
@@ -81,9 +79,9 @@
                 <h3 class="title-footer">Contacto</h3>
                 <div class="footer-content">
                     <div class="container-icons">  
-                        <a class="links-footer1" target="_blank" href="https://api.whatsapp.com/send?phone=3117443258"><img class="icons-footer" src="./images/icons/whatsapp.png" alt="Icono WhatsApp"></a>
-                        <a class="links-footer1" target="_blank" href="#contact-form"><img class="icons-footer" src="./images/icons/correo.png" alt="Icono Correo Electrónico"></a>
-                        <a class="links-footer1" target="_blank" href="https://www.instagram.com/psico_dava/?hl=es-la"><img class="icons-footer" src="./images/icons/instagram.png" alt="Icono Instagram"></a>
+                        <a class="links-footer1" target="_blank" href="https://api.whatsapp.com/send?phone=3117443258"><img class="icons-footer" src="../images/icons/whatsapp.png" alt="Icono WhatsApp"></a>
+                        <a class="links-footer1" target="_blank" href="#contact-form"><img class="icons-footer" src="../images/icons/correo.png" alt="Icono Correo Electrónico"></a>
+                        <a class="links-footer1" target="_blank" href="https://www.instagram.com/psico_dava/?hl=es-la"><img class="icons-footer" src="../images/icons/instagram.png" alt="Icono Instagram"></a>
                     </div>
                     <div class="container-links">
                         <a class="links-footer" target="_blank" href="https://api.whatsapp.com/send?phone=3117443258">3117443258</a>
@@ -97,6 +95,7 @@
             <h3 className="footer-copyright">&copy; Portafolio Profesional PSICODAVA | Psicóloga Dahiana Valencia</h3>
         </div>
     </footer>
-    <script src="./javascript/nav.js"></script>
+    <script src="../javascript/nav.js"></script>
+    <script src="../javascript/index.js"></script>
 </body>
 </html>

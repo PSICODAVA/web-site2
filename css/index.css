@@ -21,9 +21,9 @@
     --headline6: bold 24px/38px var(--fontBase);
     --body1: 16px/25px var(--fontBase);
     --body2: 14px/22px var(--fontBase);
-    --navBar: bold 16px/28px var(--fontBase);
+    --navBar: bold 17px/28px var(--fontBase);
     --navBarMobile: bold 14px/40px var(--fontBase);
-    --button: bold 14px/22px var(--fontBase);
+    --button: bold 14px/45px var(--fontBase);
     --bg1: #E7D7C9;
     --bg2: #EDE9DF;
     --bg-gray: #DDDEE3;
